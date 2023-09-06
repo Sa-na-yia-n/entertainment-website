@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Entertainment Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Entertainment Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="articles-link">Articles</a></li>
+                <li><a href="#" id="videos-link">Videos</a></li>
+                <li><a href="#" id="music-link">Music</a></li>
+                <li><a href="#" id="games-link">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to Group 9 Entertainment Website</h2>
+            <p>Explore the world of entertainment with us! We bring you the latest articles, videos, music, and games to keep you entertained and informed.</p>
+        </section>        
+        
+        <section id="articles">
+            <h2>Latest Articles</h2>
+            <article>
+                <h3>Article Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="#">Read more</a>
+            </article>
+            
+            <article>
+                <h3>Article Title 2</h3>
+                <p>Another interesting article goes here...</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+        
+        <section id="videos">
+            <h2>Latest Videos</h2>
+            <article class="video-card">
+                <h3>Video Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+            
+            <article class="video-card">
+                <h3>Video Title 2</h3>
+                <p>Another interesting video goes here...</p>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </section>
+        
+        <section id="music">
+            <h2>Latest Music</h2>
+            <article class="music-card">
+                <h3>Song Title 1</h3>
+                <p>Artist: Artist Name</p>
+                <audio controls>
+                    <source src="song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </article>
+            
+            <article class="music-card">
+                <h3>Song Title 2</h3>
+                <p>Artist: Another Artist</p>
+                <audio controls>
+                    <source src="song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </article>
+        </section>
+        
+        <section id="games">
+            <h2>Featured Games</h2>
+            <article class="game-card">
+                <h3>Game Title 1</h3>
+                <p>Description: A description of the game goes here...</p>
+                <img src="c:\Users\pc\Downloads\entertainment-website-main\entertainment-website-main\images\WhatsApp Image 2023-08-24 at 1.59.16 PM.jpeg" alt="Game Image">
+            </article>
+            
+            <article class="game-card">
+                <h3>Game Title 2</h3>
+                <p>Description: Another game description...</p>
+                <img src="game2.jpg" alt="Game Image">
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <footer>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contact</th>
+                        <th>Follow Us</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email: contact@yourwebsite.com</td>
+                        <td><a href="#">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone: +1 (123) 456-7890</td>
+                        <td><a href="#">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="#">Instagram</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+        
+    </footer>
+
+    <script>
+        // JavaScript to show/hide content based on navigation links
+        const homeLink = document.getElementById("home-link");
+        const articlesLink = document.getElementById("articles-link");
+        const videosLink = document.getElementById("videos-link");
+        const musicLink = document.getElementById("music-link");
+        const gamesLink = document.getElementById("games-link");
+
+        const homeSection = document.getElementById("home");
+        const articlesSection = document.getElementById("articles");
+        const videosSection = document.getElementById("videos");
+        const musicSection = document.getElementById("music");
+        const gamesSection = document.getElementById("games");
+
+        homeLink.addEventListener("click", () => {
+            hideAllSections();
+            homeSection.style.display = "block";
+        });
+
+        articlesLink.addEventListener("click", () => {
+            hideAllSections();
+            articlesSection.style.display = "block";
+        });
+
+        videosLink.addEventListener("click", () => {
+            hideAllSections();
+            videosSection.style.display = "block";
+        });
+
+        musicLink.addEventListener("click", () => {
+            hideAllSections();
+            musicSection.style.display = "block";
+        });
+
+        gamesLink.addEventListener("click", () => {
+            hideAllSections();
+            gamesSection.style.display = "block";
+        });
+
+        function hideAllSections() {
+            homeSection.style.display = "none";
+            articlesSection.style.display = "none";
+            videosSection.style.display = "none";
+            musicSection.style.display = "none";
+            gamesSection.style.display = "none";
+        }
+    </script>
+</body>
+</html>

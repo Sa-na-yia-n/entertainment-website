@@ -1,0 +1,150 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e72e2e;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style the header */
+header {
+    background-color: #11f11c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+/* Style the Home section */
+#home {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555;
+    color: #fff;
+}
+/* Add styles for game cards */
+.game-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.game-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Style the game images */
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Add styles for music cards */
+.music-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.music-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Style the audio element */
+audio {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Add styles for video cards */
+.video-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.video-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Style the video element */
+video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px 0;
+}
+
